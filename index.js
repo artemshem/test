@@ -13,3 +13,10 @@ const dog = new Animal({
   name: 'Rex',
   color: 'black'
 })
+
+class Cat extends Animal {
+  constructor(options) {
+    super(options);
+    this.tail = options.tail;
+  }
+}
